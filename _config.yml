@@ -79,7 +79,7 @@ gitalk:
 ## Reading quantity (LeanCloud) ##
 leancloud:
   app_id:  3s85VPGtOYXDcJxNuEbb2cuG-MdYXbMMI
-  app_key:  JHM0Y9wWtpo1ilrwsbC9QMz9
+  app_key:  JHm0Y9wWtpo1ilrwsbC9QMz9
   app_class:  blog_counter
 
 # mathjax: true
