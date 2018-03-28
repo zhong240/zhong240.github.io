@@ -1,10 +1,9 @@
 <!DOCTYPE html><html lang="en">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Blog - a Saleana</title>
-<meta name="description" content="a Saleana
-">
-<link rel="canonical" href="http://localhost:4000/"><link rel="alternate" type="application/rss+xml" title="a Saleana" href="http://localhost:4000/feed.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Blog View Count - a Saleana</title>
+<meta name="description" content="This is a sad story.">
+<link rel="canonical" href="http://localhost:4000/2018/03/28/review-count.html"><link rel="alternate" type="application/rss+xml" title="a Saleana" href="http://localhost:4000/feed.xml">
 <!-- for Safari on iOS https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/app-icon/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo/icon-180x180.png"><link rel="apple-touch-icon" sizes="167x167" href="/assets/images/logo/icon-167x167.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/images/logo/icon-152x152.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/images/logo/icon-120x120.png"><link rel="shortcut icon" href="/assets/images/logo/icon-120x120.png">
 <!-- for Chrome on Android https://developer.chrome.com/multidevice/android/installtohomescreen -->
 <meta name="mobile-web-app-capable" content="yes"><link rel="icon" sizes="192x192" href="/assets/images/logo/icon-192x192.png">
@@ -234,104 +233,149 @@ AEFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKT3l4GMAAAAASUVORK5CYII=" />
     </nav>
   </div>
 </header>
-<div class="m-page-main"><div class="m-home">
-  <div class="main">
-    <div class="m-post-list"><article><h1><a href="/2018/03/28/review-count.html">Blog View Count</a></h1>
-          <div class="m-article-content">This is a sad story.
-
-</div><a href="/2018/03/28/review-count.html">Click to read more ...</a><div class="m-article-data clearfix"><meta itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Jia"/></meta><ul class="tag-wrapper"><li>
+<div class="m-page-main"><div class="m-post">
+	<div class="main js-main clearfix">
+		<div class="col-2 js-col-2">
+			<aside class="js-article-aside"><div class="m-toc js-toc"></div></aside>
+		</div>
+		<div class="col-1">
+			<article itemscope itemtype="http://schema.org/BlogPosting">
+				<meta itemprop="mainEntityOfPage" itemscope itemType="https://schema.org/WebPage"/>
+				<header class="main-header"><h1 itemprop="headline" itemprop="name headline">Blog View Count</h1><div class="m-article-data clearfix"><meta itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Jia"/></meta><ul class="tag-wrapper"><li>
           <a class="pill-button" href="/all.html?tag=other">other</a>
         </li></ul><div class="other-wrapper"><div class="view-wrapper">
         <span class="article-view" id="post-key-20180328">0
         </span> views
-      </div><div class="date-wrapper"><span class="article-meta">Mar 28, 2018</span></div>
+      </div><div class="date-wrapper"><time class="article-meta" datetime="2018-03-28T00:00:00+08:00"
+          itemprop="datePublished">Mar 28, 2018
+        </time></div>
   </div>
 </div>
-</article><article><h1><a href="/2018/03/25/popeyes.html">Project NinjaGo Intro</a></h1>
-          <div class="m-article-content">The components of this project.
+</header>
+				<div class="m-article-content js-article-content" itemprop="articleBody"><p>This is a sad story.</p>
 
-</div><a href="/2018/03/25/popeyes.html">Click to read more ...</a><div class="m-article-data clearfix"><meta itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Jia"/></meta><ul class="tag-wrapper"><li>
-          <a class="pill-button" href="/all.html?tag=project">project</a>
-        </li></ul><div class="other-wrapper"><div class="view-wrapper">
-        <span class="article-view" id="post-key-2018032502">0
-        </span> views
-      </div><div class="date-wrapper"><span class="article-meta">Mar 25, 2018</span></div>
-  </div>
-</div>
-</article><article><h1><a href="/2018/03/25/doxygen.html">Doxygen CheatSheet</a></h1>
-          <div class="m-article-content">This is a easy start guide which contains some basic Doxygen config tag introduction.
+<!--more-->
 
-</div><a href="/2018/03/25/doxygen.html">Click to read more ...</a><div class="m-article-data clearfix"><meta itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Jia"/></meta><ul class="tag-wrapper"><li>
-          <a class="pill-button" href="/all.html?tag=tools">tools</a>
-        </li></ul><div class="other-wrapper"><div class="view-wrapper">
-        <span class="article-view" id="post-key-2018032501">0
-        </span> views
-      </div><div class="date-wrapper"><span class="article-meta">Mar 25, 2018</span></div>
-  </div>
+<p>Though I could receive data from visitng my articles and found them on LeanCloud, the view count is not updated. I found there were javascript codes inserted in _layouts/home.html and _layouts/post.html, but even uncommenting them didn’t make a difference. A way to manipulate view count is in _includes/components/article-data.html - simply make the 0 to any other number. This change applies to all articles of course. I double-checked the developer’s git page but found identical code. So it is not the fault of code? What is the problem then?</p>
 </div>
-</article><article><h1><a href="/2018/03/24/timer.html">A Note about Timer</a></h1>
-          <div class="m-article-content">Main components of a Timer class implemented in C++. I used to have a hard time thinking this through, so I guess I’d better keep a note of it.
+				<footer><meta itemprop="dateModified" content="2018-03-28T00:00:00+08:00"><!-- <div class="article-license"><div class="m-license"><div class="clearfix"><a class="octocat" href="https://github.com/zhong240/zhong240.github.io//tree/master/_posts/2018-03-28-review-count.md">
+        <img alt="View on Github" src="/assets/images/octocat.jpg" />
+      </a><p><a href="https://github.com/zhong240/zhong240.github.io//tree/master/_posts/2018-03-28-review-count.md">View this POST on Github.</a></p><p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> license.</p><a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+      <img alt="Creative Commons License" src="/assets/images/license-cc4.png" />
+    </a><p></p>
+  </div>
+</div></div> -->
+				</footer>
+			</article>
+			<div class="article-previous-next clearfix"><div class="article-next"><span>NEXT</span><a href="/2018/03/25/popeyes.html">Project NinjaGo Intro</a></div></div></div>
+	</div>
+</div><script src="//cdn.bootcss.com/toc/0.3.2/toc.min.js"></script>
+<script type="text/javascript">
+	window.throttle = function(func, wait) {
+	  var args, result, thisArg, timeoutId, lastCalled = 0;
 
-</div><a href="/2018/03/24/timer.html">Click to read more ...</a><div class="m-article-data clearfix"><meta itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Jia"/></meta><ul class="tag-wrapper"><li>
-          <a class="pill-button" href="/all.html?tag=basics">basics</a>
-        </li></ul><div class="other-wrapper"><div class="view-wrapper">
-        <span class="article-view" id="post-key-20180324">0
-        </span> views
-      </div><div class="date-wrapper"><span class="article-meta">Mar 24, 2018</span></div>
-  </div>
-</div>
-</article><article><h1><a href="/2018/03/19/programming-basics.html">Programming Basics 编程的一些基本常识</a></h1>
-          <div class="m-article-content">每天学一点。先写中文的。
+	  function trailingCall() {
+	    lastCalled = new Date;
+	    timeoutId = null;
+	    result = func.apply(thisArg, args);
+	  }
+	  return function() {
+	    var now = new Date,
+	      remaining = wait - (now - lastCalled);
 
-</div><a href="/2018/03/19/programming-basics.html">Click to read more ...</a><div class="m-article-data clearfix"><meta itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Jia"/></meta><ul class="tag-wrapper"><li>
-          <a class="pill-button" href="/all.html?tag=basics">basics</a>
-        </li></ul><div class="other-wrapper"><div class="view-wrapper">
-        <span class="article-view" id="post-key-2018031901">0
-        </span> views
-      </div><div class="date-wrapper"><span class="article-meta">Mar 19, 2018</span></div>
-  </div>
-</div>
-</article><article><h1><a href="/2018/03/19/programmer-advanced.html">Programmer Advanced 程序员的素养</a></h1>
-          <div class="m-article-content">每天学一点。先写中文的。
+	    args = arguments;
+	    thisArg = this;
 
-</div><a href="/2018/03/19/programmer-advanced.html">Click to read more ...</a><div class="m-article-data clearfix"><meta itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Jia"/></meta><ul class="tag-wrapper"><li>
-          <a class="pill-button" href="/all.html?tag=advanced">advanced</a>
-        </li></ul><div class="other-wrapper"><div class="view-wrapper">
-        <span class="article-view" id="post-key-2018031902">0
-        </span> views
-      </div><div class="date-wrapper"><span class="article-meta">Mar 19, 2018</span></div>
-  </div>
-</div>
-</article><article><h1><a href="/2018/03/10/second-post.html">Second Post</a></h1>
-          <div class="m-article-content">Now there are two posts.
-</div><a href="/2018/03/10/second-post.html">Click to read more ...</a><div class="m-article-data clearfix"><meta itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Jia"/></meta><ul class="tag-wrapper"><li>
-          <a class="pill-button" href="/all.html?tag=other">other</a>
-        </li></ul><div class="other-wrapper"><div class="view-wrapper">
-        <span class="article-view" id="post-key-2018031002">0
-        </span> views
-      </div><div class="date-wrapper"><span class="article-meta">Mar 10, 2018</span></div>
-  </div>
-</div>
-</article></div><nav class="m-pagination"><p>8 post articles, 2 pages.</p>
-          <ul><li><div class="round-button inactive">
-                <div class="icon icon--prrevious"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-</svg>
-</div></div>
-              </li><li>
-                  <div class="round-button cur"><span>1</span></div>
-                </li><li>
-                    <a class="round-button" href="/blog/page2"><span>2</span></a>
-                  </li><li>
-                <a class="round-button" href="/blog/page2">
-                  <div class="icon icon--next"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-</svg>
-</div>
-                </a>
-              </li></ul>
-        </nav></div>
-</div></div>
+	    if (remaining <= 0) {
+	      clearTimeout(timeoutId);
+	      timeoutId = null;
+	      lastCalled = now;
+	      result = func.apply(thisArg, args);
+	    } else if (!timeoutId) {
+	      timeoutId = setTimeout(trailingCall, remaining);
+	    }
+	    return result;
+	  };
+	}
+	$(function() {
+	  var $window = $(window);
+	  var $pageStage = $('.js-page-stage');
+	  var $pageMain = $('.js-main');
+	  var $pageFooter = $('.js-page-footer');
+	  var $articleContent = $('.js-article-content');
+	  var $articleAside = $('.js-article-aside');
+	  var $toc = $('.js-toc');
+		var $col2 = $('.js-col-2');
+	  var hasTitle = $articleContent.find('h1,h2,h3').length > 0;
+	  function asideSticky() {
+	    return $col2.css('display') !== 'none' && $pageStage.hasClass('has-toc');
+	  }
+
+	  function setTocClass() {
+	    if (hasTitle) {
+	      !$pageStage.hasClass('has-toc') && $pageStage.addClass('has-toc');
+	    }
+	  }
+
+	  setTocClass();
+
+	  function setAsideTOC() {
+	    var asideTop, asideLeft, scrollBottom, asideBottomTop, lastScrollTop;
+
+	    function init() {
+	      var asideOffset = $articleAside.offset();
+	      var footerOffset = $pageFooter.offset();
+	      var mainOffset = $pageMain.offset();
+	      asideTop = mainOffset.top;
+	      asideHeight = $toc.outerHeight() + parseInt($articleAside.css('padding-top'), 10) + parseInt($articleAside.css('padding-bottom'), 10);
+	      asideLeft = mainOffset.left + $pageMain.outerWidth() - $articleAside.outerWidth() - parseInt($pageMain.css('padding-right'), 10);
+	      scrollBottom = footerOffset.top - asideHeight;
+	      asideBottomTop = scrollBottom - mainOffset.top;
+	    }
+
+	    function setAside(force) {
+	      force !== true && (force = false);
+	      var scrollTop = $window.scrollTop();
+	      if (scrollTop >= asideTop && scrollTop <= scrollBottom) {
+	        (!force && lastScrollTop >= asideTop && lastScrollTop <= scrollBottom) ||
+	        $articleAside.addClass('fixed').css({
+	          left: asideLeft + 'px',
+	          top: 0
+	        });
+	      } else if (scrollTop < asideTop) {
+	        (!force && lastScrollTop < asideTop) ||
+	        $articleAside.removeClass('fixed').css({
+	          left: 0,
+	          top: 0
+	        });
+	      } else {
+	        (!force && lastScrollTop > scrollBottom) ||
+	        $articleAside.removeClass('fixed').css({
+	          left: 0,
+	          top: asideBottomTop + 'px'
+	        });
+	      }
+	      lastScrollTop = scrollTop;
+	    }
+	    asideSticky() && (init(), setAside());
+	    $window.on('scroll', function() {
+	      asideSticky() && setAside();
+	    });
+	    $window.on('resize', throttle(function() {
+	      setTocClass();
+	      asideSticky() && (init(), setAside(true));
+	    }, 100));
+	    setTimeout(init, 4000);
+	  }
+	  setTimeout(setAsideTOC, 1000);
+
+	  $toc.toc({
+	    selectors: 'h1,h2,h3',
+	    container: '.js-article-content',
+			highlightOffset: 0
+	  });
+	});
+</script></div>
 </div>
 </div><div class="m-page-footer js-page-footer">
   <div class="main">
