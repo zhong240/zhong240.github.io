@@ -168,7 +168,7 @@ layout: blog-default
 		      var blog = new Blog();
 		      blog.set('title', '{{ page.title }}');
 		      blog.set('key', '{{ page.key }}');
-		      blog.set('views', 0);
+		      blog.set('views', 1);
 		      blog.save().then(function(page) {
 		        addOne(page)
 		      }, function(error) {
