@@ -7,6 +7,8 @@ tags: basics
 
 每天学一点。先写中文的。
 
+<!--more-->
+
 #### IDE: Integrated Development Environment 集成开发环境
 
 IDE是应用程序。代码编辑器。可以有额外的编译功能、设计UI功能。
