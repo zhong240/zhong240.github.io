@@ -135,7 +135,7 @@ titles:
 </div>
 {%- if site.leancloud.app_id and site.leancloud.app_key and site.leancloud.app_class and jekyll.environment != "development" -%}
   <script src="//cdn1.lncld.net/static/js/3.4.1/av-min.js"></script>
-  <script>
+  <!-- <script>
     $(function() {
       AV.init({
         appId: '{{ site.leancloud.app_id }}',
@@ -156,5 +156,5 @@ titles:
         });
       });
     });
-  </script>
+  </script> -->
 {%- endif -%}
