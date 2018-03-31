@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-04-01T01:55:52+08:00</updated><id>http://localhost:4000/</id><title type="html">a Saleana</title><subtitle>a Saleana
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-04-01T03:35:19+08:00</updated><id>http://localhost:4000/</id><title type="html">a Saleana’s</title><subtitle>a Saleana
 </subtitle><author><name>Jia</name></author><entry><title type="html">Blog View Count</title><link href="http://localhost:4000/2018/03/28/view-count.html" rel="alternate" type="text/html" title="Blog View Count" /><published>2018-03-28T00:00:00+08:00</published><updated>2018-03-28T00:00:00+08:00</updated><id>http://localhost:4000/2018/03/28/view-count</id><content type="html" xml:base="http://localhost:4000/2018/03/28/view-count.html">&lt;p&gt;This is a sad story.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -275,11 +275,11 @@ It may also serves as a tuple for any two-component variables, such as velocity,
 &lt;h4 id=&quot;something-else&quot;&gt;Something Else&lt;/h4&gt;
 &lt;p&gt;I used Doxgen in 2016 and the html pages generated showed an expanded class list, class hierarchy, class members, etc. However, in 2018 Doxygen seemed to have changed this presentation. Indeed, an inverted triangle icon is used for those tabs. The problem is that clicking on “Classes”  directly jumps to the class list. While the pages of class hierarchy and others still get generated, I cannot directly access them anymore with the default setting. Maybe some simple code change in the html fies will solve this problem, but that’s something I need to dip into a little before I figure it out.&lt;/p&gt;
 
-&lt;p&gt;Here is the picture to demonstrate the difference I mentioned above.&lt;/p&gt;
+&lt;p&gt;Here are the screenshots to demonstrate the difference I mentioned above.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/doxygen2016.png&quot; alt=&quot;doxygen2016&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/zhong240/zhong240.github.io/master/post_images/doxygen2016.png&quot; alt=&quot;doxygen2016&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/doxygen2018.png&quot; alt=&quot;doxygen2018&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/zhong240/zhong240.github.io/master/post_images/doxygen2018.png&quot; alt=&quot;doxygen2018&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;For the full documentation please visit &lt;a href=&quot;http://www.stack.nl/~dimitri/doxygen/manual/config.html&quot;&gt;Doxygen Config Manual&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jia</name></author><category term="tools" /><summary type="html">This is a easy start guide which contains some basic Doxygen config tag introduction.</summary></entry><entry><title type="html">A Note about Timer</title><link href="http://localhost:4000/2018/03/24/timer.html" rel="alternate" type="text/html" title="A Note about Timer" /><published>2018-03-24T00:00:00+08:00</published><updated>2018-03-24T00:00:00+08:00</updated><id>http://localhost:4000/2018/03/24/timer</id><content type="html" xml:base="http://localhost:4000/2018/03/24/timer.html">&lt;p&gt;Main components of a Timer class implemented in C++. I used to have a hard time thinking this through, so I guess I’d better keep a note of it.&lt;/p&gt;
 

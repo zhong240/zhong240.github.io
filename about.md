@@ -8,15 +8,19 @@ titles:
 key: page-about
 ---
 
-I may be a fake programmer.
+Welcome to a Saleana's blog :relaxed:
 
-## More Information
+Hopefully you find something helpful or at least interesting here.
 
-To be continued..
+## About this Blog
 
-## Contact Me
+Every programmer should have a personal website, so I may be a fake programmer for a couple of years.. Even though this is not an ideal (and there will never be one) platform for project demonstration - it is a blog to share learning experience rather than a showcase of achievements; and my obsessive compulsive disorder gets even worse due to aesthetic fatigue.. This is a awesome theme that I fell in love with at the first sight! Furthermore, this is my very first **website**. I should not be too supercritical about it.
 
-[zhong.jia1@husky.neu.edu](zhong.jia1@husky.neu.edu)
+## About Me
+
+I am computer science student studying in Northeastern University, Boston, MA.. and I am too shy to share more!
+
+Please contact me if you have any questions or fun thoughts to share about! [zhong.jia1@husky.neu.edu](mailto:zhong.jia1@husky.neu.edu)
 
 <!-- ---
 layout: page
