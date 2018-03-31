@@ -20,7 +20,7 @@ Every programmer should have a personal website, so I may be a fake programmer f
 
 I am computer science student studying in Northeastern University, Boston, MA.. and I am too shy to share more!
 
-Please contact me if you have any questions or fun thoughts to share about! [zhong.jia1@husky.neu.edu](mailto:zhong.jia1@husky.neu.edu)
+Please contact me at [zhong.jia1@husky.neu.edu](mailto:zhong.jia1@husky.neu.edu) if you have any questions or fun thoughts to share about!
 
 <!-- ---
 layout: page
