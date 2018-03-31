@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-04-01T03:40:27+08:00</updated><id>http://localhost:4000/</id><title type="html">a Saleana</title><subtitle>a Saleana
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-04-01T03:48:12+08:00</updated><id>http://localhost:4000/</id><title type="html">a Saleana</title><subtitle>a Saleana
 </subtitle><author><name>Jia</name></author><entry><title type="html">Blog View Count</title><link href="http://localhost:4000/2018/03/28/view-count.html" rel="alternate" type="text/html" title="Blog View Count" /><published>2018-03-28T00:00:00+08:00</published><updated>2018-03-28T00:00:00+08:00</updated><id>http://localhost:4000/2018/03/28/view-count</id><content type="html" xml:base="http://localhost:4000/2018/03/28/view-count.html">&lt;p&gt;This is a sad story.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -9,63 +9,39 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;A happy ending.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Jia</name></author><category term="other" /><summary type="html">This is a sad story.</summary></entry><entry><title type="html">Project NinjaGo Intro</title><link href="http://localhost:4000/2018/03/25/popeyes.html" rel="alternate" type="text/html" title="Project NinjaGo Intro" /><published>2018-03-25T00:00:00+08:00</published><updated>2018-03-25T00:00:00+08:00</updated><id>http://localhost:4000/2018/03/25/popeyes</id><content type="html" xml:base="http://localhost:4000/2018/03/25/popeyes.html">&lt;p&gt;NinjaGo is a 2D Platform Game implemented in C++ using SDL library. NinjaGo is superior to peer projects in the sense of its design architecture. The classes are well-organized and ready for further implementation. Here is a detailed but also condensed walkthrough of the basic class hierarchy.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Jia</name></author><category term="other" /><summary type="html">This is a sad story.</summary></entry><entry><title type="html">Project NinjaGo Intro</title><link href="http://localhost:4000/2018/03/25/popeyes.html" rel="alternate" type="text/html" title="Project NinjaGo Intro" /><published>2018-03-25T00:00:00+08:00</published><updated>2018-03-25T00:00:00+08:00</updated><id>http://localhost:4000/2018/03/25/popeyes</id><content type="html" xml:base="http://localhost:4000/2018/03/25/popeyes.html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/zhong240/zhong240.github.io/master/post_images/ninjago_mainmenu.png&quot; alt=&quot;doxygen2016&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;NinjaGo is a 2D Platform Game implemented in C++ using SDL library. NinjaGo is superior to peer projects in the sense of its design architecture. The classes are well-organized and ready for further implementation. Here is a detailed but also condensed walkthrough of the basic class hierarchy.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;h4 id=&quot;class-list&quot;&gt;Class List&lt;/h4&gt;
+&lt;h2 id=&quot;class-list&quot;&gt;Class List&lt;/h2&gt;
 
 &lt;p&gt;Collider &amp;amp; GameObject:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Bullet&lt;/li&gt;
-  &lt;li&gt;Collectible&lt;/li&gt;
-  &lt;li&gt;Hero&lt;/li&gt;
-  &lt;li&gt;Minion&lt;/li&gt;
-  &lt;li&gt;Powerup&lt;/li&gt;
-  &lt;li&gt;Tile&lt;/li&gt;
+  &lt;li&gt;Bullet, Collectible, Hero, Minion, Powerup, Tile&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Menu:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;InstructionMenu&lt;/li&gt;
-  &lt;li&gt;MainMenu&lt;/li&gt;
-  &lt;li&gt;PassMenu&lt;/li&gt;
-  &lt;li&gt;PauseMenu&lt;/li&gt;
-  &lt;li&gt;SettingsMenu&lt;/li&gt;
-  &lt;li&gt;WinMenu&lt;/li&gt;
-  &lt;li&gt;LoseMenu&lt;/li&gt;
+  &lt;li&gt;InstructionMenu, MainMenu, PassMenu, PauseMenu, SettingsMenu, WinMenu, LoseMenu&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;System:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;CollisionSystem&lt;/li&gt;
-  &lt;li&gt;ControlSystem&lt;/li&gt;
-  &lt;li&gt;DisplaySystem&lt;/li&gt;
-  &lt;li&gt;GameSetting&lt;/li&gt;
-  &lt;li&gt;PlaySystem&lt;/li&gt;
-  &lt;li&gt;ResourceManager&lt;/li&gt;
-  &lt;li&gt;SoundSystem&lt;/li&gt;
-  &lt;li&gt;TileMapSystem&lt;/li&gt;
+  &lt;li&gt;CollisionSystem, ControlSystem, DisplaySystem, GameSetting, PlaySystem, ResourceManager, SoundSystem, TileMapSystem&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Other/Utilities:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Camera&lt;/li&gt;
-  &lt;li&gt;CAnimation&lt;/li&gt;
-  &lt;li&gt;Collision&lt;/li&gt;
-  &lt;li&gt;LButton&lt;/li&gt;
-  &lt;li&gt;LTexture&lt;/li&gt;
-  &lt;li&gt;LTimer&lt;/li&gt;
-  &lt;li&gt;MainProgram&lt;/li&gt;
-  &lt;li&gt;TileMap&lt;/li&gt;
-  &lt;li&gt;Vector2D&lt;/li&gt;
+  &lt;li&gt;Camera, CAnimation, Collision, LButton, LTexture, LTimer, MainProgram, TileMap, Vector2D&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;collider--gameobject&quot;&gt;Collider &amp;amp; GameObject:&lt;/h4&gt;
+&lt;h2 id=&quot;collider--gameobject&quot;&gt;Collider &amp;amp; GameObject:&lt;/h2&gt;
 
 &lt;h6 id=&quot;gameobject&quot;&gt;GameObject&lt;/h6&gt;
 &lt;p&gt;A GameObject is the basic unit of the game. It is a base class to be inherited.&lt;/p&gt;
@@ -116,7 +92,7 @@
   &lt;li&gt;tileType: whether it is ground or not&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;menu&quot;&gt;Menu:&lt;/h4&gt;
+&lt;h2 id=&quot;menu&quot;&gt;Menu:&lt;/h2&gt;
 &lt;p&gt;Menu is a layer to display current content. It is an abstract base class.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;enum MENU_MESSAGE{
@@ -197,7 +173,7 @@ virtual void render();
 &lt;h6 id=&quot;tilemapsystem&quot;&gt;TileMapSystem&lt;/h6&gt;
 &lt;p&gt;&lt;em&gt;(To be updated)&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;otherutilities&quot;&gt;Other/Utilities:&lt;/h4&gt;
+&lt;h2 id=&quot;otherutilities&quot;&gt;Other/Utilities:&lt;/h2&gt;
 
 &lt;h6 id=&quot;camera&quot;&gt;Camera&lt;/h6&gt;
 &lt;p&gt;Also a singleton class. The camera always focuses on the hero.

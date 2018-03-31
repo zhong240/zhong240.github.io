@@ -252,63 +252,39 @@ AEFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKT3l4GMAAAAASUVORK5CYII=" />
   </div>
 </div>
 </header>
-				<div class="m-article-content js-article-content" itemprop="articleBody"><p>NinjaGo is a 2D Platform Game implemented in C++ using SDL library. NinjaGo is superior to peer projects in the sense of its design architecture. The classes are well-organized and ready for further implementation. Here is a detailed but also condensed walkthrough of the basic class hierarchy.</p>
+				<div class="m-article-content js-article-content" itemprop="articleBody"><p><img src="https://raw.githubusercontent.com/zhong240/zhong240.github.io/master/post_images/ninjago_mainmenu.png" alt="doxygen2016" /></p>
+
+<p>NinjaGo is a 2D Platform Game implemented in C++ using SDL library. NinjaGo is superior to peer projects in the sense of its design architecture. The classes are well-organized and ready for further implementation. Here is a detailed but also condensed walkthrough of the basic class hierarchy.</p>
 
 <!--more-->
 
-<h4 id="class-list">Class List</h4>
+<h2 id="class-list">Class List</h2>
 
 <p>Collider &amp; GameObject:</p>
 
 <ul>
-  <li>Bullet</li>
-  <li>Collectible</li>
-  <li>Hero</li>
-  <li>Minion</li>
-  <li>Powerup</li>
-  <li>Tile</li>
+  <li>Bullet, Collectible, Hero, Minion, Powerup, Tile</li>
 </ul>
 
 <p>Menu:</p>
 
 <ul>
-  <li>InstructionMenu</li>
-  <li>MainMenu</li>
-  <li>PassMenu</li>
-  <li>PauseMenu</li>
-  <li>SettingsMenu</li>
-  <li>WinMenu</li>
-  <li>LoseMenu</li>
+  <li>InstructionMenu, MainMenu, PassMenu, PauseMenu, SettingsMenu, WinMenu, LoseMenu</li>
 </ul>
 
 <p>System:</p>
 
 <ul>
-  <li>CollisionSystem</li>
-  <li>ControlSystem</li>
-  <li>DisplaySystem</li>
-  <li>GameSetting</li>
-  <li>PlaySystem</li>
-  <li>ResourceManager</li>
-  <li>SoundSystem</li>
-  <li>TileMapSystem</li>
+  <li>CollisionSystem, ControlSystem, DisplaySystem, GameSetting, PlaySystem, ResourceManager, SoundSystem, TileMapSystem</li>
 </ul>
 
 <p>Other/Utilities:</p>
 
 <ul>
-  <li>Camera</li>
-  <li>CAnimation</li>
-  <li>Collision</li>
-  <li>LButton</li>
-  <li>LTexture</li>
-  <li>LTimer</li>
-  <li>MainProgram</li>
-  <li>TileMap</li>
-  <li>Vector2D</li>
+  <li>Camera, CAnimation, Collision, LButton, LTexture, LTimer, MainProgram, TileMap, Vector2D</li>
 </ul>
 
-<h4 id="collider--gameobject">Collider &amp; GameObject:</h4>
+<h2 id="collider--gameobject">Collider &amp; GameObject:</h2>
 
 <h6 id="gameobject">GameObject</h6>
 <p>A GameObject is the basic unit of the game. It is a base class to be inherited.</p>
@@ -359,7 +335,7 @@ AEFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKT3l4GMAAAAASUVORK5CYII=" />
   <li>tileType: whether it is ground or not</li>
 </ul>
 
-<h4 id="menu">Menu:</h4>
+<h2 id="menu">Menu:</h2>
 <p>Menu is a layer to display current content. It is an abstract base class.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>enum MENU_MESSAGE{
@@ -440,7 +416,7 @@ virtual void render();
 <h6 id="tilemapsystem">TileMapSystem</h6>
 <p><em>(To be updated)</em></p>
 
-<h4 id="otherutilities">Other/Utilities:</h4>
+<h2 id="otherutilities">Other/Utilities:</h2>
 
 <h6 id="camera">Camera</h6>
 <p>Also a singleton class. The camera always focuses on the hero.
