@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Blog View Count - a Saleana</title>
 <meta name="description" content="This is a sad story.">
-<link rel="canonical" href="http://localhost:4000/2018/03/28/review-count.html"><link rel="alternate" type="application/rss+xml" title="a Saleana" href="http://localhost:4000/feed.xml">
+<link rel="canonical" href="http://localhost:4000/2018/03/28/view-count.html"><link rel="alternate" type="application/rss+xml" title="a Saleana" href="http://localhost:4000/feed.xml">
 <!-- for Safari on iOS https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/app-icon/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo/icon-180x180.png"><link rel="apple-touch-icon" sizes="167x167" href="/assets/images/logo/icon-167x167.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/images/logo/icon-152x152.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/images/logo/icon-120x120.png"><link rel="shortcut icon" href="/assets/images/logo/icon-120x120.png">
 <!-- for Chrome on Android https://developer.chrome.com/multidevice/android/installtohomescreen -->
 <meta name="mobile-web-app-capable" content="yes"><link rel="icon" sizes="192x192" href="/assets/images/logo/icon-192x192.png">
@@ -256,11 +256,17 @@ AEFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKT3l4GMAAAAASUVORK5CYII=" />
 
 <!--more-->
 
-<p>Though I could receive data from visitng my articles and found them on LeanCloud, the view count is not updated. I found there were javascript codes inserted in _layouts/home.html and _layouts/post.html, but even uncommenting them didn’t make a difference. A way to manipulate view count is in _includes/components/article-data.html - simply make the 0 to any other number. This change applies to all articles of course. I double-checked the developer’s git page but found identical code. So it is not the fault of code? What is the problem then?</p>
+<p>Though I could receive data from visitng my articles and found them on LeanCloud, the view count was not updated. I found there were javascript codes inserted in _layouts/home.html and _layouts/post.html, but even uncommenting them didn’t make a difference. A way to manipulate view count is in _includes/components/article-data.html - simply make the 0 to any other number. This change applies to all articles of course. I double-checked the developer’s git page but found identical code. So it is not the fault of code? What is the problem then?</p>
+
+<p>Thanks to Qi this desperation was terminated. Changing the authorization control of my blog_counter class created in LeadCloud solved the problem. First, manually make ACL(Access Control List) for each existing object (i.e. blog post) which has 0 views to <code class="highlighter-rouge">"write":true</code> for all users. Then existing posts can increment views based on visitor clicks. (Not granting read access for all users doesn’t seem to be a problem for view count. Though manipulating these two parameters may create multipe object for the same post which makes it hard to maintain a unique real view count.) Second, grant write access for all users under ACL column setting: <code class="highlighter-rouge">{"_owner":{"read":true,"write":true},"*":{"read":true,"write":true}}</code>. Then new created posts will be able to count views! Yay!!!</p>
+
+<blockquote>
+  <p>A happy ending.</p>
+</blockquote>
 </div>
-				<footer><meta itemprop="dateModified" content="2018-03-28T00:00:00+08:00"><!-- <div class="article-license"><div class="m-license"><div class="clearfix"><a class="octocat" href="https://github.com/zhong240/zhong240.github.io//tree/master/_posts/2018-03-28-review-count.md">
+				<footer><meta itemprop="dateModified" content="2018-03-28T00:00:00+08:00"><!-- <div class="article-license"><div class="m-license"><div class="clearfix"><a class="octocat" href="https://github.com/zhong240/zhong240.github.io//tree/master/_posts/2018-03-28-view-count.md">
         <img alt="View on Github" src="/assets/images/octocat.jpg" />
-      </a><p><a href="https://github.com/zhong240/zhong240.github.io//tree/master/_posts/2018-03-28-review-count.md">View this POST on Github.</a></p><p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> license.</p><a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+      </a><p><a href="https://github.com/zhong240/zhong240.github.io//tree/master/_posts/2018-03-28-view-count.md">View this POST on Github.</a></p><p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> license.</p><a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
       <img alt="Creative Commons License" src="/assets/images/license-cc4.png" />
     </a><p></p>
   </div>

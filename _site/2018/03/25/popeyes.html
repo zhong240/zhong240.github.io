@@ -2,7 +2,7 @@
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Project NinjaGo Intro - a Saleana</title>
-<meta name="description" content="The components of this project.">
+<meta name="description" content="NinjaGo is a 2D Platform Game implemented in C++ using SDL library. NinjaGo is superior to peer projects in the sense of its design architecture. The classes...">
 <link rel="canonical" href="http://localhost:4000/2018/03/25/popeyes.html"><link rel="alternate" type="application/rss+xml" title="a Saleana" href="http://localhost:4000/feed.xml">
 <!-- for Safari on iOS https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/app-icon/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo/icon-180x180.png"><link rel="apple-touch-icon" sizes="167x167" href="/assets/images/logo/icon-167x167.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/images/logo/icon-152x152.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/images/logo/icon-120x120.png"><link rel="shortcut icon" href="/assets/images/logo/icon-120x120.png">
 <!-- for Chrome on Android https://developer.chrome.com/multidevice/android/installtohomescreen -->
@@ -252,14 +252,17 @@ AEFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKT3l4GMAAAAASUVORK5CYII=" />
   </div>
 </div>
 </header>
-				<div class="m-article-content js-article-content" itemprop="articleBody"><p>The components of this project.</p>
+				<div class="m-article-content js-article-content" itemprop="articleBody"><p>NinjaGo is a 2D Platform Game implemented in C++ using SDL library. NinjaGo is superior to peer projects in the sense of its design architecture. The classes are well-organized and ready for further implementation. Here is a detailed but also condensed walkthrough of the basic class hierarchy.</p>
 
 <!--more-->
+
+<h4 id="class-list">Class List</h4>
 
 <p>Collider &amp; GameObject:</p>
 
 <ul>
   <li>Bullet</li>
+  <li>Collectible</li>
   <li>Hero</li>
   <li>Minion</li>
   <li>Powerup</li>
@@ -274,6 +277,8 @@ AEFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKT3l4GMAAAAASUVORK5CYII=" />
   <li>PassMenu</li>
   <li>PauseMenu</li>
   <li>SettingsMenu</li>
+  <li>WinMenu</li>
+  <li>LoseMenu</li>
 </ul>
 
 <p>System:</p>
@@ -285,6 +290,7 @@ AEFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKT3l4GMAAAAASUVORK5CYII=" />
   <li>GameSetting</li>
   <li>PlaySystem</li>
   <li>ResourceManager</li>
+  <li>SoundSystem</li>
   <li>TileMapSystem</li>
 </ul>
 
@@ -322,11 +328,14 @@ AEFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKT3l4GMAAAAASUVORK5CYII=" />
   <li>
     <p>colDir: normal vector of the collider</p>
   </li>
-  <li>onCollide(Collider c): compare whether two bounding boxes overlap <strong>TO-DO</strong></li>
+  <li>onCollide(Collider c): compare whether two bounding boxes overlap <em>(To be updated)</em></li>
 </ul>
 
 <h6 id="bullet">Bullet</h6>
 <p>A simple class.</p>
+
+<h6 id="collectible">Collectible</h6>
+<p>A Collectible refers to coin-like game objects the player can collect along the gameplay.</p>
 
 <h6 id="hero">Hero</h6>
 <p>The hero class only sets up the basic info. Collision is handled via CollisionSystem, receiving and processing player input data is handled by ControlSystem.</p>
@@ -345,7 +354,7 @@ AEFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKT3l4GMAAAAASUVORK5CYII=" />
 <p>Tile is slightly different than the other elements of GameObject &amp; Collider, because it doesn’t move.</p>
 
 <ul>
-  <li>tileId: ? <strong>TO-DO</strong></li>
+  <li>tileId: <em>(To be updated)</em></li>
   <li>index: the “id” of the specific region of a tile source file; this is for rendering the correct tile piece</li>
   <li>tileType: whether it is ground or not</li>
 </ul>
@@ -369,10 +378,10 @@ virtual void render();
 
 <ul>
   <li>Constructor: call init() and loadMeadia()</li>
-  <li>init(): create button for each option, set button position, add button to button map <strong>TO-DO: mouse out, hover, down, up?</strong></li>
-  <li>loadMedia(): load texture <strong>TO-DO: stringstream</strong></li>
-  <li>accept(): <strong>TO-DO</strong></li>
-  <li><strong>TO-DO: what is label?</strong></li>
+  <li>init(): create button for each option, set button position, add button to button map <em>(To be updated: mouse out, hover, down, up)</em></li>
+  <li>loadMedia(): load texture <em>(To be updated: stringstream)</em></li>
+  <li>accept(): <em>(To be updated)</em></li>
+  <li>label: <em>(To be updated)</em></li>
   <li>render(): render button then render label</li>
   <li>show(): a loop to determine SDL_event; will jump to other menu(interface/layer); then call render()</li>
 </ul>
@@ -389,27 +398,30 @@ virtual void render();
 <h6 id="settingsmenu">SettingsMenu</h6>
 <p>Similar to other menus.</p>
 
+<h6 id="winmenulosemenu">WinMenu/LoseMenu</h6>
+<p>A scene to display win/lose message. Similar to other menus.</p>
+
 <h4 id="system">System</h4>
 <p>All systems use singleton design pattern. Only one instance is necessary to function well.</p>
 
 <h6 id="collisionsystem">CollisionSystem</h6>
 <p>The core of this game.
-<strong>TO-DO 800+ lines of code. Need to study carefully</strong></p>
+<em>(To be updated: 800+ lines of code)</em></p>
 
 <h6 id="controlsystem">ControlSystem</h6>
-<p><strong>TO-DO</strong></p>
+<p><em>(To be updated)</em></p>
 
 <h6 id="displaysystem">DisplaySystem</h6>
 <p>Init SDL library and then loadMedia() using ResourceManager. The main function is to render game objects (i.e., hero, minions, bullets, etc), menus (differnet scenes), and game info (i.e. current level, life, etc).</p>
 
 <ul>
-  <li>update(): <strong>TO-DO: invoke TileMapSystem?</strong></li>
+  <li>update(): <em>(To be updated: invoke TileMapSystem)</em></li>
   <li>updateMapTexture(): different cases on what current level is, so different map can be aquired accordingly</li>
 </ul>
 
 <h6 id="gamesetting">GameSetting</h6>
 <p>GameSetting is a container of the “game data”, such as levels, score, minions.
-<strong>TO-DO</strong></p>
+<em>(To be updated)</em></p>
 
 <h6 id="playsystem">PlaySystem</h6>
 <p>For now I will say PlaySystem monitors the state of the game.  The hero status, minion status, and other interactive game components will get updated, but this update doesn’t involve collision. The game status will be checked (win/lose).</p>
@@ -422,28 +434,30 @@ virtual void render();
   <li>tile maps</li>
 </ul>
 
+<h6 id="soundsystem">SoundSystem</h6>
+<p>Render music and sound effects.</p>
+
 <h6 id="tilemapsystem">TileMapSystem</h6>
-<p><strong>TO-DO</strong></p>
+<p><em>(To be updated)</em></p>
 
 <h4 id="otherutilities">Other/Utilities:</h4>
 
 <h6 id="camera">Camera</h6>
-<p>Also a singleton class. The camera always focuses on the hero.</p>
-
-<p><strong>TO-DO</strong></p>
+<p>Also a singleton class. The camera always focuses on the hero.
+<em>(To be updated)</em></p>
 
 <h6 id="canimation">CAnimation</h6>
-<p>CAnimation only takes care of calculating the correct frame and then the other system <strong>TO-DO</strong> can render correct pose from spritesheet.</p>
+<p>CAnimation only takes care of calculating the correct frame and then the other system <em>(To be updated)</em> can render correct pose from spritesheet.</p>
 
 <h6 id="collision">Collision</h6>
-<p><strong>TO-DO Handle collisions between GameObject and Tile.</strong></p>
+<p><em>(To be updated)</em> Handle collisions between GameObject and Tile.</p>
 
 <h6 id="lbutton">LButton</h6>
 <p>A wrapper class for SDL_Button.</p>
 
 <ul>
-  <li>handleEvent(SDL_Event* e): check whether this button is clicked and then invoke relative actions
-<strong>TO-DO</strong></li>
+  <li>handleEvent(SDL_Event* e): check whether this button is clicked and then invoke relative actions</li>
+  <li><em>(To be updated)</em></li>
 </ul>
 
 <h6 id="ltimer">LTimer</h6>
@@ -451,7 +465,7 @@ virtual void render();
 
 <h6 id="ltexture">LTexture</h6>
 <p>A wrapper class for SDL_Texture.
-<strong>TO-DO</strong></p>
+<em>(To be updated)</em></p>
 
 <h6 id="mainprogram">MainProgram</h6>
 <p>Singleton design pattern is used becasue there is only main program. It has init(), loop(), and run().</p>
@@ -470,7 +484,7 @@ virtual void render();
 </ul>
 
 <h6 id="tilemap">TileMap</h6>
-<p><strong>TO-DO</strong></p>
+<p><em>(To be updated)</em></p>
 
 <h6 id="vector2d">Vector2D</h6>
 <p>A small 2D vector “math library” which allows for basic vector operations.
@@ -485,7 +499,7 @@ It may also serves as a tuple for any two-component variables, such as velocity,
 </div></div> -->
 				</footer>
 			</article>
-			<div class="article-previous-next clearfix"><div class="article-previous"><span>PREVIOUS</span><a href="/2018/03/28/review-count.html">Blog View Count</a></div><div class="article-next"><span>NEXT</span><a href="/2018/03/25/doxygen.html">Doxygen CheatSheet</a></div></div></div>
+			<div class="article-previous-next clearfix"><div class="article-previous"><span>PREVIOUS</span><a href="/2018/03/28/view-count.html">Blog View Count</a></div><div class="article-next"><span>NEXT</span><a href="/2018/03/25/doxygen.html">Doxygen CheatSheet</a></div></div></div>
 	</div>
 </div><script src="//cdn.bootcss.com/toc/0.3.2/toc.min.js"></script>
 <script type="text/javascript">
